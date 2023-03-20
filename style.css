@@ -1,0 +1,67 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr  1fr;
+    grid-template-rows: 0.5fr 3fr 2fr;
+    grid-template-areas: 
+    "header header header"
+    "r-sidebar main-content l-sidebar"
+    "footer politics politics"
+    "footer technology technology"
+    "footer locals locals"
+    "footer opinions opinions"
+    "footer sports sports"
+    ;
+    margin: 30px;
+    padding: 10px;    
+    border-radius: 1px;
+}
+.header{
+    grid-area: header;
+    text-align: center;
+    text-decoration-color: aliceblue;
+    text-emphasis-position: calc(center);
+    border: 1px;
+    border:  1px;
+}
+#r-sidebar{
+    grid-area: r-sidebar;
+    text-align: center;
+    border-radius: 1px;
+    border: solid black 1px;
+}
+#main-content{
+    grid-area: main-content;
+    text-align: center;
+    border-radius: 1px;
+    border: solid black 1px;
+}
+#l-sidebar{
+    grid-area: l-sidebar;
+    text-align: center;
+    border-radius: 1px;
+    border: solid black 1px;
+}
+.footer{
+    grid-area: footer;
+    text-align: center;
+   border: solid black 1px;
+}
+#politics{
+    background-color: rgb(228, 208, 93);
+}
+#technology{
+    background-color: rgba(0, 174, 255, 0.568);
+}
+#locals{
+    background-color: rgb(44, 146, 172);
+}
+#opinions{
+    background-color: aqua;
+}
+#sports{
+    background-color: rgb(95, 5, 155);
+}
+.h3{
+    font-family: 'Courier New', Courier, monospace;
+}
